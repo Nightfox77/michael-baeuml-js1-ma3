@@ -1,4 +1,5 @@
-const url = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=efdefe3f99f047c9934528e800ad4187"
+const key = "efdefe3f99f047c9934528e800ad4187";
+const url = `https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=${key}`
 const container = document.querySelector(".container");
 container.innerHTML = "Loading...";
 
@@ -24,6 +25,8 @@ async function getList() {
     } catch(error) {
         container.innerHTML = "An error occured"
 
-    } 
+    } finally {
+        console.log("Done!!")
+    }
 }
 getList()
