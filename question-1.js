@@ -1,0 +1,1 @@
+const remainder = (a,b) => a % b;
