@@ -3,7 +3,6 @@ h1 {
     color: black;
 }
 .results {
-    display: flex;
     margin-bottom: 10px;
     border: 1px solid black;
     width: 500px;
